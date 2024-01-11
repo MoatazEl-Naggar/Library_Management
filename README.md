@@ -31,25 +31,25 @@ The API will be accessible at http://localhost:3000.
 ### Books:
 
 
-GET /books: List all books
+GET /books: List all books. Output: an object of all books and their details.
 
-POST /books: Add a new book
+POST /books: Add a new book. input: title, author, ISBN, available quantity, and shelf location.
 
-PUT /books/:id: Update book details
+PUT /books/:id: Update book details. input: desired updated title, author, ISBN, available quantity, and shelf location.
 
-DELETE /books/:id: Delete a book
+DELETE /books/:id: Delete a book.
 
-GET /books/search: Search for a book by title, author, or ISBN
+GET /books/search: Search for a book by title, author, or ISBN. input: title, author, or ISBN or a part of any of them. /output: an object of all books with the input charachters.
 
 
 ### Borrowers:
 
 
-GET /borrowers: List all borrowers
+GET /borrowers: List all borrowers. output: an object of all borrowers details.
 
-POST /borrowers: Register a new borrower
+POST /borrowers: Register a new borrower. input: name, email, and registered date.
 
-PUT /borrowers/:id: Update borrower details
+PUT /borrowers/:id: Update borrower details. input: desired updated name, email, and registered date.
 
 DELETE /borrowers/:id: Delete a borrower
 
@@ -57,18 +57,18 @@ DELETE /borrowers/:id: Delete a borrower
 ### Borrowing Process:
 
 
-GET /borrowings: List all borrowing processes
+GET /borrowings: List all borrowing processes. output: an object of all borrowing processes with details
 
-POST /borrowings: Borrow a book
+POST /borrowings: Borrow a book. input: BookId, BorrowerId and check out date.
 
-PUT /borrowings/:id/return: Return a book
+PUT /borrowings/:id/return: Return a book. input: returnDate.
 
-GET /borrowings/:borrowerId: List books currently borrowed by a borrower
+GET /borrowings/:borrowerId: List books currently borrowed by a borrower. input: BorrowerId./ output: an object of all borrowed books by that Id.
 
-GET /borrowings/overdue: List overdue books
+GET /borrowings/overdue: List overdue books. output: an object of all overdue books.
 
 
-### Additional Features:
+## Additional Features:
 
 
 ### Analytical Reports:
