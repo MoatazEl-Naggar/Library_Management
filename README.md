@@ -31,25 +31,32 @@ The API will be accessible at http://localhost:3000.
 ### Books:
 
 
-GET /books: List all books. Output: an object of all books and their details.
+GET /books: List all books.<br>
+Output: an object of all books and their details.
 
-POST /books: Add a new book. input: title, author, ISBN, available quantity, and shelf location.
+POST /books: Add a new book. <br>
+input: title, author, ISBN, available quantity, and shelf location.
 
-PUT /books/:id: Update book details. input: desired updated title, author, ISBN, available quantity, and shelf location.
+PUT /books/:id: Update book details. <br>
+input: desired updated title, author, ISBN, available quantity, and shelf location.
 
 DELETE /books/:id: Delete a book.
 
-GET /books/search: Search for a book by title, author, or ISBN. input: title, author, or ISBN or a part of any of them. /output: an object of all books with the input charachters.
+GET /books/search: Search for a book by title, author, or ISBN. <br>
+input: title, author, or ISBN or a part of any of them. <br>output: an object of all books with the input charachters.
 
 
 ### Borrowers:
 
 
-GET /borrowers: List all borrowers. output: an object of all borrowers details.
+GET /borrowers: List all borrowers. <br>
+output: an object of all borrowers details.
 
-POST /borrowers: Register a new borrower. input: name, email, and registered date.
+POST /borrowers: Register a new borrower. <br>
+input: name, email, and registered date.
 
-PUT /borrowers/:id: Update borrower details. input: desired updated name, email, and registered date.
+PUT /borrowers/:id: Update borrower details. <br>
+input: desired updated name, email, and registered date.
 
 DELETE /borrowers/:id: Delete a borrower
 
@@ -57,15 +64,20 @@ DELETE /borrowers/:id: Delete a borrower
 ### Borrowing Process:
 
 
-GET /borrowings: List all borrowing processes. output: an object of all borrowing processes with details
+GET /borrowings: List all borrowing processes. <br>
+output: an object of all borrowing processes with details
 
-POST /borrowings: Borrow a book. input: BookId, BorrowerId and check out date.
+POST /borrowings: Borrow a book. <br>
+input: BookId, BorrowerId and check out date.
 
-PUT /borrowings/:id/return: Return a book. input: returnDate.
+PUT /borrowings/:id/return: Return a book. <br>
+input: returnDate.
 
-GET /borrowings/:borrowerId: List books currently borrowed by a borrower. input: BorrowerId./ output: an object of all borrowed books by that Id.
+GET /borrowings/:borrowerId: List books currently borrowed by a borrower. <br>
+input: BorrowerId.<br> output: an object of all borrowed books by that Id.
 
-GET /borrowings/overdue: List overdue books. output: an object of all overdue books.
+GET /borrowings/overdue: List overdue books. <br>
+output: an object of all overdue books.
 
 
 ## Additional Features:
