@@ -2,16 +2,16 @@
 
 This Library Management System is a simple yet effective application designed to manage books, borrowers, and borrowing processes. The system allows users to perform various operations such as adding, updating, and deleting books and borrowers. Additionally, it facilitates borrowing and returning books while keeping track of due dates and overdue books. The system is built with scalability, performance, and security in mind, offering a RESTful API for seamless integration with other applications.
 
-Setup Instructions:
+# Setup Instructions:
 
-Clone the Repository:
+# Clone the Repository:
 
 ```
 git clone <repository-url>
 cd <repository-directory>
 ```
 
-Install Dependencies:
+## Install Dependencies:
 
 `npm install`
 
