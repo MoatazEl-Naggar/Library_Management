@@ -33,24 +33,35 @@ API Endpoints:
 Books:
 
 GET /books: List all books
+
 POST /books: Add a new book
+
 PUT /books/:id: Update book details
+
 DELETE /books/:id: Delete a book
+
 GET /books/search: Search for a book by title, author, or ISBN
 
 Borrowers:
 
 GET /borrowers: List all borrowers
+
 POST /borrowers: Register a new borrower
+
 PUT /borrowers/:id: Update borrower details
+
 DELETE /borrowers/:id: Delete a borrower
 
 Borrowing Process:
 
 GET /borrowings: List all borrowing processes
+
 POST /borrowings: Borrow a book
+
 PUT /borrowings/:id/return: Return a book
+
 GET /borrowings/:borrowerId: List books currently borrowed by a borrower
+
 GET /borrowings/overdue: List overdue books
 
 Additional Features:
@@ -58,7 +69,9 @@ Additional Features:
 Analytical Reports:
 
 /analytics/exports/borrowing-processes-xlsx: Export borrowing process data in Xlsx format for a specific period.
+
 /analytics/exports/overdue-borrows-xlsx: Export all overdue borrows of the last month in Xlsx format.
+
 /analytics/exports/borrowing-processes-last-month-xlsx: Export all borrowing processes of the last month in Xlsx format.
 
 Rate Limiting:
