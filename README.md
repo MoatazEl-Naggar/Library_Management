@@ -28,9 +28,12 @@ This command will start the application using nodemon, which automatically resta
 Access the API:
 The API will be accessible at http://localhost:3000.
 
+
 API Endpoints:
 
+
 Books:
+
 
 GET /books: List all books
 
@@ -42,7 +45,9 @@ DELETE /books/:id: Delete a book
 
 GET /books/search: Search for a book by title, author, or ISBN
 
+
 Borrowers:
+
 
 GET /borrowers: List all borrowers
 
@@ -52,7 +57,9 @@ PUT /borrowers/:id: Update borrower details
 
 DELETE /borrowers/:id: Delete a borrower
 
+
 Borrowing Process:
+
 
 GET /borrowings: List all borrowing processes
 
@@ -64,9 +71,12 @@ GET /borrowings/:borrowerId: List books currently borrowed by a borrower
 
 GET /borrowings/overdue: List overdue books
 
+
 Additional Features:
 
+
 Analytical Reports:
+
 
 /analytics/exports/borrowing-processes-xlsx: Export borrowing process data in Xlsx format for a specific period.
 
@@ -74,10 +84,15 @@ Analytical Reports:
 
 /analytics/exports/borrowing-processes-last-month-xlsx: Export all borrowing processes of the last month in Xlsx format.
 
+
 Rate Limiting:
 
+
 Rate limiting is applied to the following endpoints to prevent abuse:
+
+
 /books (GET and POST)
+
 /borrowings (GET and POST)
 
 Authentication:
